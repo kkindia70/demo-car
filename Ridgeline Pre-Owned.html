@@ -1,0 +1,414 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Ridgeline Pre-Owned</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,500;62..125,700;62..125,800&family=Public+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: dealership lot — inventory is the hero; every car wears a yellow window-sticker price tag */
+:root{
+  --bg:#f3f5f7; --surface:#ffffff; --ink:#14202b; --muted:#5b6875; --line:#dbe1e7;
+  --brand:#1d3a52; --brand-ink:#ffffff; --tag:#ffd23f; --tag-ink:#1a1a12; --good:#1f7a4d; --soft:#e7edf2;
+  --f-display:"Archivo","Arial Narrow",system-ui,sans-serif;
+  --f-body:"Public Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --f-mono:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0f161d; --surface:#17212b; --ink:#e8edf2; --muted:#9aa8b5; --line:#2a3743;
+  --brand:#2c5677; --brand-ink:#ffffff; --tag:#ffd23f; --tag-ink:#1a1a12; --good:#4cc38a; --soft:#1e2a35; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0f161d; --surface:#17212b; --ink:#e8edf2; --muted:#9aa8b5; --line:#2a3743;
+  --brand:#2c5677; --brand-ink:#ffffff; --tag:#ffd23f; --tag-ink:#1a1a12; --good:#4cc38a; --soft:#1e2a35; color-scheme:dark}
+
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:15px;line-height:1.55}
+.wrap{max-width:1180px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+h1,h2,h3{font-family:var(--f-display);font-stretch:112%;line-height:1.08;margin:0;text-wrap:balance}
+a{color:inherit}
+button,input,select,textarea{font:inherit;color:inherit}
+:focus-visible{outline:3px solid var(--tag);outline-offset:2px}
+.mono{font-family:var(--f-mono)}
+.eyebrow{font-size:12px;letter-spacing:.12em;text-transform:uppercase;font-weight:600;color:var(--muted)}
+
+/* header */
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--brand)}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:9;background:var(--brand);color:var(--brand-ink)}
+.nav{display:flex;align-items:center;gap:20px;padding-block:14px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;font-family:var(--f-display);font-weight:800;font-stretch:120%;font-size:19px;letter-spacing:.01em}
+.logo-mark{width:30px;height:30px;border-radius:6px;background:var(--tag);color:var(--tag-ink);display:grid;place-items:center;font-size:15px}
+.nav-links{display:flex;gap:22px;margin-left:auto;font-weight:500;font-size:14px}
+.nav-links a{text-decoration:none;opacity:.88}
+.nav-links a:hover{opacity:1;text-decoration:underline}
+.nav-call{font-family:var(--f-mono);font-size:14px;padding:8px 12px;border:1px solid rgba(255,255,255,.35);border-radius:6px;white-space:nowrap}
+@media (max-width:760px){.nav-links{display:none}.nav-call{margin-left:auto}}
+
+/* hero */
+.hero{background:var(--brand);color:var(--brand-ink);padding-block:28px 0}
+.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:32px;align-items:end}
+.hero h1{font-size:clamp(34px,5.4vw,60px);font-weight:800}
+.hero h1 span{background:var(--tag);color:var(--tag-ink);padding:0 .14em;border-radius:4px}
+.hero p{max-width:52ch;opacity:.88;margin:16px 0 0;font-size:16px}
+.trust{display:flex;flex-wrap:wrap;gap:8px 22px;margin-top:20px;font-size:13px;opacity:.9}
+.trust b{font-family:var(--f-mono);font-weight:500}
+.hero-car{align-self:end;max-width:100%}
+.search{position:relative;margin-top:28px;transform:translateY(50%);background:var(--surface);color:var(--ink);border-radius:10px;box-shadow:0 10px 30px rgba(10,20,30,.18);padding:14px;display:grid;grid-template-columns:repeat(3,1fr) auto;gap:10px}
+.field{display:flex;flex-direction:column;gap:4px;min-width:0}
+.field label{font-size:11px;letter-spacing:.1em;text-transform:uppercase;font-weight:600;color:var(--muted)}
+select,input,textarea{background:var(--bg);border:1px solid var(--line);border-radius:7px;padding:10px 11px;width:100%}
+.btn{border:0;border-radius:7px;padding:11px 18px;font-weight:600;cursor:pointer;background:var(--brand);color:var(--brand-ink);white-space:nowrap}
+.btn:hover{filter:brightness(1.12)}
+.btn-tag{background:var(--tag);color:var(--tag-ink)}
+.btn-ghost{background:transparent;border:1px solid var(--line);color:var(--ink)}
+.search .btn{align-self:end}
+@media (max-width:860px){.hero-grid{grid-template-columns:1fr}.hero-car{display:none}.search{grid-template-columns:1fr 1fr;transform:none;margin-bottom:24px}.search .btn{grid-column:1/-1}}
+
+/* inventory */
+.inv{padding-block:90px 48px}
+@media (max-width:860px){.inv{padding-block:32px 48px}}
+.inv-head{display:flex;flex-wrap:wrap;align-items:end;justify-content:space-between;gap:12px;margin-bottom:18px}
+.inv-head h2{font-size:clamp(26px,3.4vw,36px)}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:6px 13px;font-size:13px;cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.toolbar{display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between;margin-bottom:18px}
+.count{color:var(--muted);font-size:14px}
+.sort{display:flex;align-items:center;gap:8px;font-size:14px}
+.sort select{width:auto}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:18px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:10px;overflow:hidden;display:flex;flex-direction:column;cursor:pointer;transition:transform .15s,box-shadow .15s;text-align:left;padding:0}
+.card:hover{transform:translateY(-2px);box-shadow:0 8px 22px rgba(10,20,30,.10)}
+.card-img{position:relative;background:var(--soft);aspect-ratio:16/8.5;max-width:100%;display:grid;place-items:center}
+.card-img svg{width:88%;height:auto}
+.sticker{position:absolute;top:12px;right:12px;background:var(--tag);color:var(--tag-ink);font-family:var(--f-display);font-weight:800;font-stretch:105%;font-size:20px;padding:4px 10px 5px;border-radius:4px;box-shadow:0 2px 0 rgba(0,0,0,.15);transform:rotate(2deg)}
+.badge{position:absolute;top:12px;left:12px;font-size:11px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;background:var(--surface);border:1px solid var(--line);border-radius:4px;padding:3px 7px}
+.card-body{padding:14px 16px 16px;display:flex;flex-direction:column;gap:10px;flex:1}
+.card-title{font-family:var(--f-display);font-weight:700;font-stretch:108%;font-size:19px;line-height:1.15}
+.card-title small{display:block;font-family:var(--f-body);font-weight:400;font-size:13px;color:var(--muted);font-stretch:100%;margin-top:3px}
+.specs{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;border-top:1px solid var(--line);padding-top:10px;margin-top:auto}
+.spec{display:flex;flex-direction:column;font-size:12px;color:var(--muted)}
+.spec b{font-family:var(--f-mono);font-weight:500;font-size:13px;color:var(--ink);font-variant-numeric:tabular-nums}
+.est{font-size:13px;color:var(--muted)}
+.est b{color:var(--good);font-weight:600}
+.empty{grid-column:1/-1;text-align:center;padding:48px 16px;border:1px dashed var(--line);border-radius:10px;color:var(--muted)}
+
+/* why + finance */
+.band{background:var(--surface);border-block:1px solid var(--line)}
+.band .wrap{padding-block:48px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:40px}
+@media (max-width:860px){.two{grid-template-columns:1fr}}
+.why{display:grid;gap:18px;margin-top:20px}
+.why-item{display:grid;grid-template-columns:44px 1fr;gap:14px;align-items:start}
+.why-num{font-family:var(--f-mono);font-size:13px;border:1px solid var(--line);border-radius:6px;height:44px;display:grid;place-items:center;font-weight:500}
+.why-item h3{font-size:17px;font-stretch:105%;margin-bottom:3px}
+.why-item p{margin:0;color:var(--muted);font-size:14px}
+.calc{background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:22px;display:grid;gap:14px}
+.calc-row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.range-row{display:grid;gap:6px}
+.range-row label{display:flex;justify-content:space-between;font-size:13px;font-weight:600}
+.range-row label span{font-family:var(--f-mono);font-weight:500}
+input[type=range]{padding:0;border:0;background:transparent;accent-color:var(--brand)}
+.payment{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;border-top:1px solid var(--line);padding-top:14px}
+.payment strong{font-family:var(--f-display);font-weight:800;font-size:40px;font-variant-numeric:tabular-nums}
+.fine{font-size:12px;color:var(--muted)}
+
+/* contact */
+.contact{padding-block:48px}
+form{display:grid;gap:12px}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media (max-width:520px){.form-row,.calc-row{grid-template-columns:1fr}}
+.ok{background:var(--soft);border-left:4px solid var(--good);padding:12px 14px;border-radius:6px;font-size:14px}
+.info{display:grid;gap:16px;align-content:start}
+.info-box{border:1px solid var(--line);border-radius:10px;padding:18px;background:var(--surface)}
+.hours{display:grid;grid-template-columns:auto 1fr;gap:4px 18px;font-size:14px;margin:8px 0 0}
+.hours dt{color:var(--muted)}
+.hours dd{margin:0;font-family:var(--f-mono);font-size:13px}
+.map{aspect-ratio:16/9;max-width:100%;border-radius:8px;overflow:hidden;background:var(--soft);margin-top:12px}
+.map svg{width:100%;height:100%;display:block}
+
+footer{background:var(--brand);color:var(--brand-ink);font-size:13px}
+footer .wrap{padding-block:22px;display:flex;flex-wrap:wrap;gap:10px 24px;justify-content:space-between;opacity:.9}
+
+/* WhatsApp float */
+.wa{position:fixed;right:calc(18px + env(safe-area-inset-right,0px));bottom:calc(18px + env(safe-area-inset-bottom,0px));z-index:8;background:#25d366;color:#08311a;text-decoration:none;font-weight:600;border-radius:999px;padding:12px 16px;display:flex;gap:8px;align-items:center;box-shadow:0 6px 18px rgba(0,0,0,.22)}
+
+/* modal */
+.modal-bg{position:fixed;inset:0;background:rgba(5,12,18,.6);z-index:20;display:grid;place-items:center;padding:16px}
+.modal{background:var(--surface);border-radius:12px;max-width:820px;width:100%;max-height:90vh;overflow:auto}
+.modal-top{background:var(--soft);position:relative;padding:20px;display:grid;place-items:center}
+.modal-top svg{width:min(560px,100%);height:auto}
+.close{position:absolute;top:12px;right:12px;background:var(--surface);border:1px solid var(--line);border-radius:6px;width:36px;height:36px;cursor:pointer;font-size:18px}
+.modal-body{padding:22px;display:grid;gap:18px}
+.modal-head{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;align-items:start}
+.modal-head h2{font-size:26px}
+.big-tag{background:var(--tag);color:var(--tag-ink);font-family:var(--f-display);font-weight:800;font-size:28px;padding:4px 12px;border-radius:5px}
+.spec-table{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:0;border:1px solid var(--line);border-radius:8px;overflow:hidden}
+.spec-table div{padding:10px 12px;border-bottom:1px solid var(--line);border-right:1px solid var(--line);font-size:13px;color:var(--muted)}
+.spec-table b{display:block;color:var(--ink);font-family:var(--f-mono);font-weight:500;font-size:14px}
+.feat{display:flex;flex-wrap:wrap;gap:6px}
+.feat span{font-size:13px;background:var(--soft);border-radius:4px;padding:4px 9px}
+.modal-actions{display:flex;gap:10px;flex-wrap:wrap}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="#top"><span class="logo-mark">R</span>RIDGELINE</a>
+    <nav class="nav-links" aria-label="Main">
+      <a href="#inventory">Inventory</a>
+      <a href="#finance">Financing</a>
+      <a href="#why">Why us</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <span class="nav-call">(512) 555-0148</span>
+  </div>
+</header>
+
+<section class="hero" id="top">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div>
+        <div class="eyebrow" style="color:inherit;opacity:.75">Pre-owned cars · Austin, TX</div>
+        <h1 style="margin-top:10px">Inspected, priced fair, <span>ready today.</span></h1>
+        <p>Every car on our lot passes a 150-point inspection and comes with a free vehicle history report. No hidden fees, no pressure.</p>
+        <div class="trust"><span><b>150</b>-point inspection</span><span><b>7</b>-day return</span><span><b>30</b>-day warranty</span></div>
+      </div>
+      <div class="hero-car" id="heroCar"></div>
+    </div>
+    <form class="search" id="searchForm" aria-label="Find a car">
+      <div class="field"><label for="sMake">Make</label><select id="sMake"><option value="">Any make</option></select></div>
+      <div class="field"><label for="sBody">Body type</label><select id="sBody"><option value="">Any type</option><option>Sedan</option><option>SUV</option><option>Truck</option><option>Hatchback</option></select></div>
+      <div class="field"><label for="sPrice">Max price</label><select id="sPrice"><option value="">No limit</option><option value="15000">$15,000</option><option value="20000">$20,000</option><option value="25000">$25,000</option><option value="35000">$35,000</option></select></div>
+      <button class="btn btn-tag" type="submit">Show cars</button>
+    </form>
+  </div>
+</section>
+
+<main>
+<section class="inv wrap" id="inventory">
+  <div class="inv-head">
+    <div><div class="eyebrow">On the lot now</div><h2 style="margin-top:6px">Current inventory</h2></div>
+    <div class="chips" id="chips" role="group" aria-label="Body type"></div>
+  </div>
+  <div class="toolbar">
+    <span class="count" id="count"></span>
+    <label class="sort" for="sortBy">Sort by
+      <select id="sortBy">
+        <option value="new">Newest arrivals</option>
+        <option value="plow">Price: low to high</option>
+        <option value="phigh">Price: high to low</option>
+        <option value="miles">Lowest mileage</option>
+      </select>
+    </label>
+  </div>
+  <div class="grid" id="grid"></div>
+</section>
+
+<section class="band" id="finance">
+  <div class="wrap two">
+    <div id="why">
+      <div class="eyebrow">Why buy from us</div>
+      <h2 style="font-size:clamp(24px,3vw,32px);margin-top:6px">A used car you can trust</h2>
+      <div class="why">
+        <div class="why-item"><span class="why-num">150</span><div><h3>Full inspection</h3><p>Brakes, tires, engine, electrics and frame are checked by our certified technician before a car is listed.</p></div></div>
+        <div class="why-item"><span class="why-num">VIN</span><div><h3>History report included</h3><p>See ownership, accident and service records for every car, free, before you visit.</p></div></div>
+        <div class="why-item"><span class="why-num">7d</span><div><h3>7-day money-back</h3><p>Changed your mind? Bring it back within 7 days or 300 miles for a full refund.</p></div></div>
+        <div class="why-item"><span class="why-num">$0</span><div><h3>No dealer add-ons</h3><p>The sticker price is the price. Tax, title and registration are the only extras.</p></div></div>
+      </div>
+    </div>
+    <div>
+      <div class="eyebrow">Financing</div>
+      <h2 style="font-size:clamp(24px,3vw,32px);margin-top:6px">Estimate your monthly payment</h2>
+      <div class="calc" style="margin-top:20px">
+        <div class="range-row"><label for="fPrice">Vehicle price <span id="fPriceV"></span></label><input type="range" id="fPrice" min="5000" max="50000" step="500" value="21900"></div>
+        <div class="range-row"><label for="fDown">Down payment <span id="fDownV"></span></label><input type="range" id="fDown" min="0" max="15000" step="250" value="3000"></div>
+        <div class="calc-row">
+          <div class="field"><label for="fTerm">Term</label><select id="fTerm"><option value="36">36 months</option><option value="48">48 months</option><option value="60" selected>60 months</option><option value="72">72 months</option></select></div>
+          <div class="field"><label for="fApr">APR (%)</label><input id="fApr" type="number" min="0" max="30" step="0.1" value="7.9"></div>
+        </div>
+        <div class="payment"><strong id="fOut">$0</strong><span>/ month</span></div>
+        <div class="fine">Estimate only. Your rate depends on credit approval. Tax and fees not included.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contact wrap" id="contact">
+  <div class="two">
+    <div>
+      <div class="eyebrow">Get in touch</div>
+      <h2 style="font-size:clamp(24px,3vw,32px);margin:6px 0 18px">Book a test drive</h2>
+      <form id="leadForm" novalidate>
+        <div class="form-row">
+          <div class="field"><label for="lName">Full name</label><input id="lName" required autocomplete="name" placeholder="Jordan Lee"></div>
+          <div class="field"><label for="lPhone">Phone</label><input id="lPhone" required autocomplete="tel" placeholder="(512) 555-0100"></div>
+        </div>
+        <div class="form-row">
+          <div class="field"><label for="lCar">Car you're interested in</label><select id="lCar"></select></div>
+          <div class="field"><label for="lDate">Preferred date</label><input id="lDate" type="date"></div>
+        </div>
+        <div class="field"><label for="lMsg">Message (optional)</label><textarea id="lMsg" rows="3" placeholder="Any questions about the car, trade-in or financing"></textarea></div>
+        <div><button class="btn" type="submit">Request test drive</button></div>
+        <div id="formMsg" hidden></div>
+      </form>
+    </div>
+    <div class="info">
+      <div class="info-box">
+        <div class="eyebrow">Visit the lot</div>
+        <p style="margin:6px 0 0;font-weight:600">4120 Burnet Rd, Austin, TX 78756</p>
+        <dl class="hours">
+          <dt>Mon – Fri</dt><dd>9:00 AM – 7:00 PM</dd>
+          <dt>Saturday</dt><dd>9:00 AM – 6:00 PM</dd>
+          <dt>Sunday</dt><dd>Closed</dd>
+        </dl>
+        <div class="map" aria-label="Map placeholder">
+          <svg viewBox="0 0 320 180" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+            <rect width="320" height="180" fill="var(--soft)"/>
+            <path d="M0 60 H320 M0 130 H320 M90 0 V180 M220 0 V180" stroke="var(--line)" stroke-width="10" fill="none"/>
+            <path d="M0 20 L320 170" stroke="var(--line)" stroke-width="16" fill="none"/>
+            <circle cx="160" cy="95" r="12" fill="var(--tag)" stroke="var(--ink)" stroke-width="2"/>
+            <circle cx="160" cy="95" r="4" fill="var(--ink)"/>
+          </svg>
+        </div>
+        <p class="fine" style="margin:8px 0 0">Map preview. The live site embeds Google Maps here.</p>
+      </div>
+      <div class="info-box">
+        <div class="eyebrow">Call or WhatsApp</div>
+        <p class="mono" style="margin:6px 0 0;font-size:18px">(512) 555-0148</p>
+        <p class="fine" style="margin:4px 0 0">sales@ridgelinepreowned.example</p>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer><div class="wrap"><span>© 2026 Ridgeline Pre-Owned · Fictional dealership</span><span>Concept demo website · WordPress-ready layout</span></div></footer>
+
+<a class="wa" href="https://wa.me/15125550148" target="_blank" rel="noopener">● WhatsApp us</a>
+
+<div class="modal-bg" id="modalBg" hidden>
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="mTitle" id="modal"></div>
+</div>
+
+<script>
+const CARS=[
+ {id:1,year:2021,make:"Toyota",model:"Camry",trim:"SE",body:"Sedan",price:21900,miles:38420,fuel:"Gas",trans:"Automatic",engine:"2.5L 4-cyl",mpg:"28/39",color:"#b8bec4",colorName:"Celestial Silver",owners:1,vin:"4T1G11AK5MU4…",feat:["Apple CarPlay","Backup camera","Lane assist","Adaptive cruise"],added:9},
+ {id:2,year:2020,make:"Honda",model:"CR-V",trim:"EX",body:"SUV",price:23400,miles:45110,fuel:"Gas",trans:"CVT",engine:"1.5L Turbo",mpg:"27/33",color:"#7a1f24",colorName:"Molten Red",owners:1,vin:"2HKRW2H54LH6…",feat:["AWD","Sunroof","Heated seats","Blind-spot monitor"],added:8},
+ {id:3,year:2019,make:"Ford",model:"F-150",trim:"XLT",body:"Truck",price:28750,miles:61300,fuel:"Gas",trans:"Automatic",engine:"3.5L EcoBoost V6",mpg:"18/24",color:"#2b3a4a",colorName:"Blue Jeans",owners:2,vin:"1FTEW1EP4KF8…",feat:["4x4","Tow package","Bed liner","Remote start"],added:7},
+ {id:4,year:2018,make:"Mazda",model:"Mazda3",trim:"Touring",body:"Hatchback",price:14200,miles:58900,fuel:"Gas",trans:"Automatic",engine:"2.5L 4-cyl",mpg:"25/33",color:"#a3262a",colorName:"Soul Red",owners:1,vin:"3MZBN1L39JM2…",feat:["Bose audio","Keyless entry","Backup camera"],added:6},
+ {id:5,year:2022,make:"Hyundai",model:"Tucson",trim:"SEL",body:"SUV",price:26900,miles:22150,fuel:"Gas",trans:"Automatic",engine:"2.5L 4-cyl",mpg:"26/33",color:"#e8e8e4",colorName:"Quartz White",owners:1,vin:"5NMJB3AE2NH0…",feat:["Wireless CarPlay","Heated seats","Smart cruise","Power liftgate"],added:10},
+ {id:6,year:2017,make:"Honda",model:"Civic",trim:"LX",body:"Sedan",price:13500,miles:72400,fuel:"Gas",trans:"CVT",engine:"2.0L 4-cyl",mpg:"31/40",color:"#1d1f22",colorName:"Crystal Black",owners:2,vin:"19XFC2F56HE0…",feat:["Bluetooth","Backup camera","Cruise control"],added:3},
+ {id:7,year:2020,make:"Chevrolet",model:"Silverado 1500",trim:"LT",body:"Truck",price:31200,miles:49800,fuel:"Gas",trans:"Automatic",engine:"5.3L V8",mpg:"16/22",color:"#d9d9d6",colorName:"Summit White",owners:1,vin:"1GCUYDED8LZ1…",feat:["4x4","Trailer brake","10\" touchscreen","Spray-in liner"],added:5},
+ {id:8,year:2019,make:"Toyota",model:"RAV4",trim:"XLE",body:"SUV",price:24800,miles:51200,fuel:"Hybrid",trans:"eCVT",engine:"2.5L Hybrid",mpg:"41/38",color:"#4a5a4a",colorName:"Lunar Rock",owners:1,vin:"2T3RWRFV5KW0…",feat:["AWD","Hybrid","Moonroof","Toyota Safety Sense"],added:4},
+ {id:9,year:2021,make:"Volkswagen",model:"Golf",trim:"TSI",body:"Hatchback",price:18900,miles:29700,fuel:"Gas",trans:"Automatic",engine:"1.4L Turbo",mpg:"29/36",color:"#2f5d8a",colorName:"Atlantic Blue",owners:1,vin:"3VW5T7AU8MM0…",feat:["Digital cockpit","Heated seats","Front assist"],added:2}
+];
+const fmt=n=>"$"+Math.round(n).toLocaleString("en-US");
+const mi=n=>n.toLocaleString("en-US");
+
+const SHAPES={
+ Sedan:{b:"M18 104 L18 86 Q20 74 40 72 L92 66 Q118 44 148 40 L202 40 Q226 42 248 64 L286 70 Q302 75 302 90 L302 104 Z",w:"M102 66 Q124 48 148 46 L170 46 L170 66 Z M178 46 L200 46 Q218 48 236 66 L178 66 Z"},
+ SUV:{b:"M18 104 L18 74 Q20 62 36 60 L70 58 L94 32 Q100 26 112 26 L236 26 Q252 26 260 40 L276 60 Q300 64 302 82 L302 104 Z",w:"M80 60 L102 34 L150 34 L150 60 Z M158 34 L232 34 Q244 34 250 44 L262 60 L158 60 Z"},
+ Truck:{b:"M16 104 L16 66 L136 66 L146 34 Q149 28 158 28 L210 28 Q220 28 227 40 L244 62 Q298 66 304 84 L304 104 Z",w:"M154 62 L162 36 L188 36 L188 62 Z M196 36 L208 36 Q216 36 222 46 L232 62 L196 62 Z"},
+ Hatchback:{b:"M24 104 L24 72 Q26 52 58 46 L100 34 Q116 28 136 28 L186 28 Q206 30 226 58 L280 66 Q298 70 298 88 L298 104 Z",w:"M64 52 L104 38 Q118 34 136 34 L150 34 L150 58 L64 58 Z M158 34 L184 34 Q198 36 214 58 L158 58 Z"}
+};
+function carSVG(c){
+ const s=SHAPES[c.body];
+ return `<svg viewBox="0 0 320 132" role="img" aria-label="${c.colorName} ${c.year} ${c.make} ${c.model}">
+  <ellipse cx="160" cy="118" rx="140" ry="7" fill="rgba(0,0,0,.14)"/>
+  <path d="${s.b}" fill="${c.color}" stroke="rgba(0,0,0,.35)" stroke-width="1.5"/>
+  <path d="${s.w}" fill="rgba(160,190,215,.75)" stroke="rgba(0,0,0,.25)" stroke-width="1"/>
+  <rect x="290" y="78" width="10" height="6" rx="2" fill="#ffe08a"/>
+  <rect x="20" y="80" width="8" height="6" rx="2" fill="#c43b3b"/>
+  ${[80,240].map(x=>`<circle cx="${x}" cy="104" r="19" fill="#1b1d20"/><circle cx="${x}" cy="104" r="9" fill="#9aa3ab"/><circle cx="${x}" cy="104" r="3" fill="#1b1d20"/>`).join("")}
+ </svg>`;
+}
+
+const state={make:"",body:"",max:0,sort:"new"};
+const $=id=>document.getElementById(id);
+
+// fill selects
+[...new Set(CARS.map(c=>c.make))].sort().forEach(m=>$("sMake").insertAdjacentHTML("beforeend",`<option>${m}</option>`));
+CARS.forEach(c=>$("lCar").insertAdjacentHTML("beforeend",`<option value="${c.id}">${c.year} ${c.make} ${c.model} · ${fmt(c.price)}</option>`));
+$("lCar").insertAdjacentHTML("afterbegin",`<option value="">Not sure yet</option>`);$("lCar").value="";
+$("heroCar").innerHTML=carSVG({...CARS[4],body:"SUV"});
+
+function renderChips(){
+ $("chips").innerHTML=["All","Sedan","SUV","Truck","Hatchback"].map(b=>{
+  const v=b==="All"?"":b;return `<button class="chip" type="button" data-b="${v}" aria-pressed="${state.body===v}">${b}</button>`}).join("");
+}
+function monthly(price){const L=price*0.9,r=0.079/12,n=60;return r*L/(1-Math.pow(1+r,-n))}
+function render(){
+ let list=CARS.filter(c=>(!state.make||c.make===state.make)&&(!state.body||c.body===state.body)&&(!state.max||c.price<=state.max));
+ const s={new:(a,b)=>b.added-a.added,plow:(a,b)=>a.price-b.price,phigh:(a,b)=>b.price-a.price,miles:(a,b)=>a.miles-b.miles}[state.sort];
+ list.sort(s);
+ $("count").textContent=`${list.length} of ${CARS.length} cars`;
+ $("grid").innerHTML=list.length?list.map(c=>`
+  <button class="card" type="button" data-id="${c.id}">
+   <div class="card-img">${c.owners===1?'<span class="badge">1 owner</span>':''}<span class="sticker">${fmt(c.price)}</span>${carSVG(c)}</div>
+   <div class="card-body">
+    <div class="card-title">${c.year} ${c.make} ${c.model}<small>${c.trim} · ${c.colorName}</small></div>
+    <div class="est">Est. <b>${fmt(monthly(c.price))}/mo</b> with 10% down</div>
+    <div class="specs">
+     <div class="spec">Mileage<b>${mi(c.miles)} mi</b></div>
+     <div class="spec">Fuel<b>${c.fuel}</b></div>
+     <div class="spec">MPG<b>${c.mpg}</b></div>
+    </div>
+   </div>
+  </button>`).join(""):`<div class="empty">No cars match these filters. Try a higher price or another body type.</div>`;
+ renderChips();
+}
+$("chips").addEventListener("click",e=>{const b=e.target.closest(".chip");if(!b)return;state.body=b.dataset.b;$("sBody").value=state.body;render()});
+$("sortBy").addEventListener("change",e=>{state.sort=e.target.value;render()});
+$("searchForm").addEventListener("submit",e=>{e.preventDefault();state.make=$("sMake").value;state.body=$("sBody").value;state.max=+$("sPrice").value||0;render();$("inventory").scrollIntoView({behavior:"smooth"})});
+
+// modal
+let lastFocus=null;
+function openCar(id){
+ const c=CARS.find(x=>x.id===id);lastFocus=document.activeElement;
+ $("modal").innerHTML=`
+  <div class="modal-top">${carSVG(c)}<button class="close" id="mClose" aria-label="Close">×</button></div>
+  <div class="modal-body">
+   <div class="modal-head">
+    <div><div class="eyebrow">${c.trim} · Stock #RL-${1040+c.id}</div><h2 id="mTitle" style="margin-top:4px">${c.year} ${c.make} ${c.model}</h2></div>
+    <span class="big-tag">${fmt(c.price)}</span>
+   </div>
+   <div class="spec-table">
+    <div>Mileage<b>${mi(c.miles)} mi</b></div><div>Engine<b>${c.engine}</b></div><div>Transmission<b>${c.trans}</b></div>
+    <div>Fuel / MPG<b>${c.fuel} · ${c.mpg}</b></div><div>Exterior<b>${c.colorName}</b></div><div>Owners<b>${c.owners}</b></div>
+    <div>VIN<b>${c.vin}</b></div><div>Inspection<b>150-pt passed</b></div><div>Est. payment<b>${fmt(monthly(c.price))}/mo</b></div>
+   </div>
+   <div><div class="eyebrow" style="margin-bottom:8px">Features</div><div class="feat">${c.feat.map(f=>`<span>${f}</span>`).join("")}</div></div>
+   <div class="modal-actions">
+    <button class="btn btn-tag" type="button" id="mBook">Book a test drive</button>
+    <button class="btn btn-ghost" type="button" id="mFin">Estimate financing</button>
+   </div>
+  </div>`;
+ $("modalBg").hidden=false;$("mClose").focus();
+ $("mClose").onclick=closeModal;
+ $("mBook").onclick=()=>{closeModal();$("lCar").value=c.id;$("contact").scrollIntoView({behavior:"smooth"});$("lName").focus({preventScroll:true})};
+ $("mFin").onclick=()=>{closeModal();$("fPrice").value=c.price;calc();$("finance").scrollIntoView({behavior:"smooth"})};
+}
+function closeModal(){$("modalBg").hidden=true;lastFocus&&lastFocus.focus()}
+$("grid").addEventListener("click",e=>{const c=e.target.closest(".card");if(c)openCar(+c.dataset.id)});
+$("modalBg").addEventListener("click",e=>{if(e.target===$("modalBg"))closeModal()});
+document.addEventListener("keydown",e=>{if(e.key==="Escape"&&!$("modalBg").hidden)closeModal()});
+
+// finance
+function calc(){
+ const P=+$("fPrice").value,D=Math.min(+$("fDown").value,P),n=+$("fTerm").value,apr=Math.max(0,+$("fApr").value||0);
+ const L=P-D,r=apr/100/12;const m=L<=0?0:(r===0?L/n:r*L/(1-Math.pow(1+r,-n)));
+ $("fPriceV").textContent=fmt(P);$("fDownV").textContent=fmt(D);$("fOut").textContent=fmt(m);
+}
+["fPrice","fDown","fTerm","fApr"].forEach(id=>$(id).addEventListener("input",calc));
+
+// lead form
+$("leadForm").addEventListener("submit",e=>{
+ e.preventDefault();const box=$("formMsg");
+ const name=$("lName").value.trim(),phone=$("lPhone").value.trim();
+ if(!name||!phone){box.className="ok";box.style.borderLeftColor="#c43b3b";box.textContent="Please add your name and phone number so we can confirm your test drive.";box.hidden=false;return}
+ const car=$("lCar").selectedOptions[0].textContent;
+ box.className="ok";box.style.borderLeftColor="";box.textContent=`Thanks, ${name.split(" ")[0]}. This is a demo, so nothing was sent. On the live site, the dealer would get your request for: ${car}.`;box.hidden=false;
+});
+
+render();calc();
+</script>
+
+</body></html>
